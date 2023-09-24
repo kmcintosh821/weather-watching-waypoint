@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Watching Waypoint</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Watching Waypoint</h1>
+        <h2>How's the weather out there?</h2>
+
+        <fieldset>
+            <legend>Display options:</legend>
+            <button id="imperial">Imperial (US)</button> <button id="metric">Metric (UK)</button>
+            
+            <div id="temp-options">
+                <span>Temperature:</span>
+                <input type="radio" id="fahrenheit" name="temp-select" value="fahrenheit" checked />
+                <label for="fahrenheit">F</label>
+                <input type="radio" id="celsius" name="temp-select" value="celsius" />
+                <label for="celsius">C</label>
+            </div>
+
+            <div id="wind-options">
+                <span>Wind Speed:</span>
+                <input type="radio" id="mph" name="wind-select" value="mph" checked />
+                <label for="mph">MPH</label>
+                <input type="radio" id="kmh" name="wind-select" value="kmh" />
+                <label for="kmh">KM/H</label>
+            </div>
+        </fieldset>        
+    </header>
+
+    <main>
+        <form id="citysearch">
+            <label for="cityname">Where are we watching?</label>
+            <input type="text" id="cityname">
+            <button type="submit">Search</button>
+            <hr>
+            <button type="button">My Location</button>
+            <br id="endofcitylist"></br>
+        </form>
+
+        <section id="currentconditions">
+            <h2><span class="currentlocation">Home</span>, Today <span class="todays-date"></span></h2>
+            <p>Temperature: <span class="temp">0</span><span class="temp-unit">°F</span></p>
+            <p>Wind Speed: <span class="wind">0</span> <span class="wind-unit">MPH</span></p>
+            <p>Humidity: <span class="humidity">0</span>%</p>
+        </section>
+        
+        <section id="fiveday">
+            <article id="day-1">
+                <h2><span class="date"></span></h2>
+                <p>Temp: <span class="temp">0</span><span class="temp-unit">°F</span></p>
+                <p>Wind: <span class="wind">0</span> <span class="wind-unit">MPH</span></p>
+                <p>Humidity: <span class="humidity">0</span>%</p>
+            </article>
+            
+            <article id="day-2">
+                <h2><span class="date"></span></h2>
+                <p>Temp: <span class="temp">0</span><span class="temp-unit">°F</span></p>
+                <p>Wind: <span class="wind">0</span> <span class="wind-unit">MPH</span></p>
+                <p>Humidity: <span class="humidity">0</span>%</p>
+            </article>
+            
+            <article id="day-3">
+                <h2><span class="date"></span></h2>
+                <p>Temp: <span class="temp">0</span><span class="temp-unit">°F</span></p>
+                <p>Wind: <span class="wind">0</span> <span class="wind-unit">MPH</span></p>
+                <p>Humidity: <span class="humidity">0</span>%</p>
+            </article>
+            
+            <article id="day-4">
+                <h2><span class="date"></span></h2>
+                <p>Temp: <span class="temp">0</span><span class="temp-unit">°F</span></p>
+                <p>Wind: <span class="wind">0</span> <span class="wind-unit">MPH</span></p>
+                <p>Humidity: <span class="humidity">0</span>%</p>
+            </article>
+            
+            <article id="day-5">
+                <h2><span class="date"></span></h2>
+                <p>Temp: <span class="temp">0</span><span class="temp-unit">°F</span></p>
+                <p>Wind: <span class="wind">0</span> <span class="wind-unit">MPH</span></p>
+                <p>Humidity: <span class="humidity">0</span>%</p>
+            </article>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+        <script>dayjs().format()</script>
+        <script src="assets/script.js"></script>
+
+    </main>
+</body>
+</html>
