@@ -10,7 +10,7 @@
         <h1>Weather Watching Waypoint</h1>
         <h2>How's the weather out there?</h2>
 
-        <fieldset>
+        <!-- <fieldset>
             <legend>Display options:</legend>
             <button id="imperial">Imperial (US)</button> <button id="metric">Metric (UK)</button>
             
@@ -29,62 +29,61 @@
                 <input type="radio" id="kmh" name="wind-select" value="kmh" />
                 <label for="kmh">KM/H</label>
             </div>
-        </fieldset>        
+        </fieldset> -->
     </header>
 
     <main>
         <form id="citysearch">
             <label for="cityname">Where are we watching?</label>
-            <input type="text" id="cityname" placeholder="New York City">
+            <input type="text" id="cityname">
             <button type="button" id="searchBtn">Search</button>
             <hr>
-            <!-- <input type="radio" id="washington-dc" value="washington-dc" name="city-history" />
-            <label for="washington-dc">Washington, DC</label> -->
-            <br id="endofcitylist"></br>
+            <div id="citylist"></div>
+            <button id="clearhistory">Clear History</button>
         </form>
 
         <section id="currentconditions">
-            <h2><span class="currentlocation">Home</span>, Today (<span id="todays-date">.</span>)</h2>
-            <p>Temperature: <span class="temp">0</span><span class="temp-unit">°F</span></p>
-            <p>Wind Speed: <span class="wind">0</span> <span class="wind-unit">MPH</span></p>
-            <p>Humidity: <span class="humidity">0</span>%</p>
+            <!-- <h2><span class="currentlocation">Home</span>, Today (<span id="todays-date">.</span>) <span id="todays-icon">.</span></h2>
+            <p>Temperature: <span class="todays-temp">0</span><span class="temp-unit">°F</span></p>
+            <p>Wind Speed: <span class="todays-wind">0</span> <span class="wind-unit">MPH</span></p>
+            <p>Humidity: <span class="todays-humidity">0</span>%</p> -->
         </section>
         
         <section id="fiveday">
-            <article id="day-1">
-                <h2>.</h2>
-                <p>Temp: <span class="temp">0</span><span class="temp-unit">°F</span></p>
-                <p>Wind: <span class="wind">0</span> <span class="wind-unit">MPH</span></p>
-                <p>Humidity: <span class="humidity">0</span>%</p>
+            <!-- <article id="day-1">
+                <h2><span class="day-1-icon">.</span></h2>
+                <p>Temp: <span class="day-1-temp">0</span><span class="temp-unit">°F</span></p>
+                <p>Wind: <span class="day-1-wind">0</span> <span class="wind-unit">MPH</span></p>
+                <p>Humidity: <span class="day-1-humidity">0</span>%</p>
             </article>
             
             <article id="day-2">
-                <h2>.</h2>
-                <p>Temp: <span class="temp">0</span><span class="temp-unit">°F</span></p>
-                <p>Wind: <span class="wind">0</span> <span class="wind-unit">MPH</span></p>
-                <p>Humidity: <span class="humidity">0</span>%</p>
+                <h2><span class="day-2-icon">.</span></h2>
+                <p>Temp: <span class="day-2-temp">0</span><span class="temp-unit">°F</span></p>
+                <p>Wind: <span class="day-2-wind">0</span> <span class="wind-unit">MPH</span></p>
+                <p>Humidity: <span class="day-2-humidity">0</span>%</p>
             </article>
             
             <article id="day-3">
-                <h2>.</h2>
-                <p>Temp: <span class="temp">0</span><span class="temp-unit">°F</span></p>
-                <p>Wind: <span class="wind">0</span> <span class="wind-unit">MPH</span></p>
-                <p>Humidity: <span class="humidity">0</span>%</p>
+                <h2><span class="day-3-icon">.</span></h2>
+                <p>Temp: <span class="day-3-temp">0</span><span class="temp-unit">°F</span></p>
+                <p>Wind: <span class="day-3-wind">0</span> <span class="wind-unit">MPH</span></p>
+                <p>Humidity: <span class="day-3-humidity">0</span>%</p>
             </article>
             
             <article id="day-4">
-                <h2>.</h2>
-                <p>Temp: <span class="temp">0</span><span class="temp-unit">°F</span></p>
-                <p>Wind: <span class="wind">0</span> <span class="wind-unit">MPH</span></p>
-                <p>Humidity: <span class="humidity">0</span>%</p>
+                <h2><span class="day-4-icon">.</span></h2>
+                <p>Temp: <span class="day-4-temp">0</span><span class="temp-unit">°F</span></p>
+                <p>Wind: <span class="day-4-wind">0</span> <span class="wind-unit">MPH</span></p>
+                <p>Humidity: <span class="day-4-humidity">0</span>%</p>
             </article>
             
             <article id="day-5">
-                <h2>.</h2>
-                <p>Temp: <span class="temp">0</span><span class="temp-unit">°F</span></p>
-                <p>Wind: <span class="wind">0</span> <span class="wind-unit">MPH</span></p>
+                <h2><span class="day-5-icon">.</span></h2>
+                <p>Temp: <span class="day-5-temp">0</span><span class="temp-unit">°F</span></p>
+                <p>Wind: <span class="day-5-wind">0</span> <span class="wind-unit">MPH</span></p>
                 <p>Humidity: <span class="humidity">0</span>%</p>
-            </article>
+            </article> -->
         </section>
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
